@@ -88,6 +88,7 @@ Tests are located in `/tests` and include full auth + user update coverage.
 - 🕊️ [Sacred-AI](https://sacred-ai.com)
 - 📈 [MySiteChart](https://mysitechart.com)
 - 🛠️ [MP-IT](https://mp-it.dk)
+- 🧵 [DDD Favoritter](https://ddd-favoritter.dk)
 
 ---
 
