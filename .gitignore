@@ -1,0 +1,39 @@
+# Node.js core
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Supabase
+.supabase/
+supabase/.temp/
+supabase/functions/.netlify/
+
+# Prisma
+#prisma/migrations/
+
+# OS/system
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.vscode/
+.idea/
+
+# Build output (optional, if using tools later)
+dist/
+build/
+
+# Optional: macOS and Linux swap files
+*.swp
+*.swo
