@@ -7,7 +7,7 @@ Perfect for starting new API projects or cloning into sacred ecosystems like **S
 ---
 
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
-![License](https://img.shields.io/github/license/sacred-ai/sacred-backend-starter)
+![License](https://img.shields.io/github/license/madspaaskesen/sacred-backend-starter)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 
