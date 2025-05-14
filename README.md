@@ -1,37 +1,43 @@
 # 🕊️ Sacred Backend Starter
 
-A clean and secure Node.js + Express backend starter with JWT auth, Prisma, and built-in testing.
+A clean and secure Node.js + Express backend starter with JWT auth, Prisma, and full test coverage — made to grow sacred projects.
 
 Perfect for starting new API projects or cloning into sacred ecosystems like **Sacred-AI** or **MySiteChart**.
+
+---
+
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![License](https://img.shields.io/github/license/sacred-ai/sacred-backend-starter)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 
 ---
 
 ## ✨ Features
 
 - Express.js + Prisma
-- JWT authentication (with only `id` + `name` in token)
-- Auth endpoints: `/auth/register`, `/auth/login`
-- Protected user update route: `PATCH /user/:id`
-- Environment config via `.env`
-- Full linting (`eslint + prettier`)
-- Jest + Supertest test suite
-- No migrations included — you run your own
+- JWT authentication (`id` + `name` only in payload)
+- Secure password handling with bcrypt
+- Auth routes: `/auth/register`, `/auth/login`
+- Protected user update: `PATCH /user/:id`
+- `.env`-based config
+- Prettier + ESLint formatting
+- Jest + Supertest tests
+- No migrations included (clean start)
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone & install dependencies
-
 ```bash
-git clone https://github.com/madspaaskesen/sacred-backend-starter.git
+git clone https://github.com/sacred-ai/sacred-backend-starter.git
 cd sacred-backend-starter
 npm install
 ```
 
-### 2. Configure environment
+### 🔧 Configure environment
 
-Copy `.env.example` to `.env` and update your settings:
+Create a `.env` file from `.env.example`:
 
 ```env
 DATABASE_URL=postgresql://...
@@ -39,20 +45,18 @@ JWT_SECRET=your-secret
 CORS_ORIGIN=http://localhost:5173
 ```
 
-### 3. Setup your DB
+### 🧱 Setup DB
 
 ```bash
 npx prisma generate
 npx prisma migrate dev --name init
 ```
 
-### 4. Start the server
+### ▶️ Start the server
 
 ```bash
 npm run dev
 ```
-
-Server will run on `http://localhost:8080`.
 
 ---
 
@@ -62,31 +66,24 @@ Server will run on `http://localhost:8080`.
 npm run test
 ```
 
-Includes full coverage for `/auth` and `/user` routes.
+Tests are located in `/tests` and include full auth + user update coverage.
 
 ---
 
 ## 📦 Scripts
 
-- `npm run dev` – local dev with `nodemon`
-- `npm run start` – start server
-- `npm run lint` – lint the code
-- `npm run format` – run Prettier
-- `npm run test` – run Jest test suite
-- `npx prisma studio` – inspect DB visually
+| Script             | Description                            |
+|--------------------|----------------------------------------|
+| `npm run dev`      | Dev server with nodemon                |
+| `npm run start`    | Run production server                  |
+| `npm run lint`     | Lint the code                          |
+| `npm run format`   | Prettier format the project            |
+| `npm run test`     | Run all Jest + Supertest tests         |
+| `npx prisma studio`| Visual DB browser                      |
 
 ---
 
-## 🧘 Philosophy
-
-This backend is designed to be:
-- **Minimal**, with only useful tools included
-- **Secure**, using JWT and bcrypt
-- **Extendable**, for custom projects or sacred platforms
-
----
-
-### 🌐 Related Projects
+## 🌐 Related Projects
 
 - 🕊️ [Sacred-AI](https://sacred-ai.com)
 - 📈 [MySiteChart](https://mysitechart.com)
@@ -94,11 +91,4 @@ This backend is designed to be:
 
 ---
 
-Built with love by [@mads](https://github.com/madspaaskesen) @ [@sacred-ai](https://github.com/Sacred-AI) 💛
-
----
-
-![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
-![License](https://img.shields.io/github/license/sacred-ai/sacred-backend-starter)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+Made with clarity and care by [@mads](https://github.com/madspaaskesen) @ [@sacred-ai](https://github.com/Sacred-AI) 💛
